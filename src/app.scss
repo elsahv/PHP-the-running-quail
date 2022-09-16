@@ -1,0 +1,14 @@
+$theme-colors: (
+    "primary": teal,
+    "danger": #ff4136   
+  );
+  
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@import 'main';
+@import 'header';
+@import 'footer';
+@import 'front-page';
+@import 'single';
