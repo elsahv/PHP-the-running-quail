@@ -2,7 +2,7 @@
 
  
     <div class="frontpage-featured-img" style="background-image: url(<?php echo get_theme_file_uri('/images/plants.jpg') ?>;">f</div>
-    <h1 class="frontpage-blog-title" id="blog">Blog Posts</h1>   
+    <h1 class="frontpage-blog-title" id="blog">Recent Blog Posts</h1>   
     <section class="frontpage-wrapper">
 
     
