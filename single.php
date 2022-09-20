@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+  <?php get_header(); ?>
 
  
    <section class="single-post-wrapper">
@@ -15,6 +15,7 @@
     <div class="post-content-container">
 
     <h1 class="single-post-title"><?php the_title(); ?></h1>
+    <p><?php echo get_the_date('l jS F, Y');?></p>
 
       <?php the_content(); ?>
     </div>
