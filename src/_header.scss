@@ -1,6 +1,4 @@
- 
-
-header {
+.navbar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,28 +7,22 @@ header {
     position:absolute;
     top: 0;
     z-index: 100;
-}
 
-.top-bar {
- display: flex;
- justify-content: space-around;
- list-style-type: none;
- text-decoration: none;
- width: 200px;      
- padding-top: 15px; 
- a {
-    color: #fff;
-    text-shadow: 2px 2px 2px #000;
-    font-size: 20px;
-    text-decoration: none;
-
- }
-}
-
-.logo {
     a {
-        color: #fff;
-        text-shadow: 2px 2px 2px #000;
-        text-decoration: none;
+    text-decoration: none;
+    color: #000;
+    text-shadow: none;
+    }
+}
+ 
+@media only screen and (max-width: 1024px) {
+    .navbar {
+        padding-top: 65px;
+    }
+}
+
+@media only screen and (max-width: 531px) {
+    .navbar .logo {
+        font-size: 28px;
     }
 }

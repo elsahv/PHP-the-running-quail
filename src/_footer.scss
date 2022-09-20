@@ -1,0 +1,16 @@
+footer {
+   background: gray;
+   border-top: solid 2px black;
+   width: 100%;
+   display: flex;
+   justify-content: center; 
+   align-items: flex-end;
+   padding-top: 20px;
+   padding-bottom: 10px;
+} 
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+ 

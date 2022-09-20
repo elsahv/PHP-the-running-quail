@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,8 +11,7 @@
 </head>
 <body>
 
-<header class="navbar navbar-dark bg-dark">
-  
+<header>  
   <h1 class="logo">
    <a href="/">
   The Indoor Jungle Project

@@ -7,7 +7,9 @@ $theme-colors: (
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
+@import 'about';
 @import 'main';
+@import 'frontpage-header';
 @import 'header';
 @import 'footer';
 @import 'front-page';
