@@ -3,7 +3,6 @@
   height: 400px;
   width: 100%;
   background: teal;
-  margin-top: 150px;
 }
 
 #about-images {
@@ -11,27 +10,7 @@
     margin: 10px 0;
 }
 
- 
-.wrapper-about {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding-top: 100px;
-} 
-
-//*
-.wrapper-container {
-  width: 800px;
-}
-
-@media only screen and (max-width: 834px) {
-  .wrapper-container {
-    width: 100%;
-    padding: 10px 35px;
-  }
-}
-
-
+  
 .portfolioCTA {
   text-align: center;
   background: teal;

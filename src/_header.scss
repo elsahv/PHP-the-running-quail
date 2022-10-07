@@ -1,28 +1,19 @@
-.navbar {
+#logo {
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+.navbar{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 150px;
-    position:absolute;
-    top: 0;
-    z-index: 100;
-
-    a {
-    text-decoration: none;
+    flex-direction: row;
+    list-style: none;
+  a {
     color: #000;
-    text-shadow: none;
-    }
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 25px;
 }
- 
-@media only screen and (max-width: 1024px) {
-    .navbar {
-        padding-top: 65px;
-    }
 }
 
-@media only screen and (max-width: 531px) {
-    .navbar .logo {
-        font-size: 28px;
-    }
-}
+
+ 

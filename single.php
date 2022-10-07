@@ -1,29 +1,37 @@
-  <?php get_header(); ?>
-
- 
-   <section class="single-post-wrapper">
-
-  <?php if(has_post_thumbnail()): ?>
-     <div class="post-image-wrapper">
-    <img src="<?php the_post_thumbnail_url('blog-large');?>" alt="<?php the_title();?>" class="single-post-img">
-    </div>
-    <?php endif; ?> 
+<?php get_header(); ?>
 
 
+<section class="grid">
 
 
-    <div class="post-content-container">
+  <!-- POSTS -->
+  <div class="left-side">
+    <?php if (has_post_thumbnail()) : ?>
+      <img src="<?php the_post_thumbnail_url('blog-fullscreen'); ?>" alt="<?php the_title(); ?>" class="img-fluid mb-3 img-thumbnail">
+    <?php endif; ?>
 
-    <h1 class="single-post-title"><?php the_title(); ?></h1>
-    <p><?php echo get_the_date('l jS F, Y');?></p>
 
-      <?php the_content(); ?>
-    </div>
+    <h1><?php the_title(); ?></h1>
+    <p><?php echo get_the_date('l jS F, Y'); ?></p>
+    <?php the_content(); ?>
 
 
     <?php wp_link_pages(); ?>
+  </div>
+
+
+
+  <!-- ASIDE BAR -->
+  <div class="right-side bg-primary border-start border-dark border-3 py-5">
+    <div class="px-5" id="aside">
+      <?php if (is_active_sidebar('single-sidebar')) : ?>
+        <?php dynamic_sidebar('single-sidebar'); ?>
+      <?php endif; ?>
     </div>
-    </section>
- 
+  </div>
+</section>
+
+
+
 
 <?php get_footer(); ?>

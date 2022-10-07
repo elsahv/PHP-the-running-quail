@@ -1,16 +1,18 @@
 $theme-colors: (
-    "primary": teal,
-    "danger": #ff4136   
-  );
-  
+  "primary": #CDAC98,
+  "secondary": #B94946,
+  "danger": orange,
+  "dark": #000,
+  "light": #C6CCB2,
+);
+
 
 
 @import "node_modules/bootstrap/scss/bootstrap";
-
+@import 'frontpage';
 @import 'about';
 @import 'main';
-@import 'frontpage-header';
 @import 'header';
 @import 'footer';
-@import 'front-page';
 @import 'single';
+@import 'sidebar';
