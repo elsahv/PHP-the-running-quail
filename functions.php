@@ -47,7 +47,7 @@ register_nav_menus(
 // Custom Image Sizes
 add_image_size('blog-fullscreen', 1920, 700, false);
 add_image_size('blog-large', 800, 1920, false);
-add_image_size('blog-small', 500, 400, true);
+add_image_size('blog-small', 600, 500, true);
 
 
 
@@ -57,29 +57,10 @@ function my_sidebars()
 {
 	register_sidebar(
 		array(
-			'name' => 'Front Page Sidebar',
-			'id' => 'front-page-sidebar',
+			'name' => 'Aside Sidebar',
+			'id' => 'aside-sidebar',
 			'before_title' => '<h3 class="widget-title">',
 			'after_title' => '</h3>',
-		)
-	);
-
-
-	register_sidebar(
-		array(
-			'name' => 'Contact Sidebar',
-			'id' => 'contact-sidebar',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>'
-		)
-	);
-
-	register_sidebar(
-		array(
-			'name' => 'Single Sidebar',
-			'id' => 'single-sidebar',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>'
 		)
 	);
 }

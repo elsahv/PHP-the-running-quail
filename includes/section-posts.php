@@ -13,7 +13,6 @@
                     <div class="card-body">
 
 
-
                         <!-- TAGS -->
                         <div id="tags" class="py-2">
                             <?php
@@ -34,6 +33,7 @@
                             <?php if (has_post_thumbnail()) : ?>
                                 <img src="<?php the_post_thumbnail_url('blog-small'); ?>" alt="<?php the_title(); ?>" class="img-fluid">
                             <?php endif; ?>
+                            
                             <h2 id="post-grid-title" class="py-2 px-1"><?php the_title(); ?></h2>
 
 

@@ -1,4 +1,4 @@
-<?php get_header('frontpage'); ?>
+<?php get_header(); ?>
 
 
 <section class="grid">
@@ -11,8 +11,8 @@
     <!-- ASIDE BAR -->
     <div class="right-side border-start border-dark border-1 py-5">
         <div class="px-5" id="aside">
-            <?php if (is_active_sidebar('front-page-sidebar')) : ?>
-                <?php dynamic_sidebar('front-page-sidebar'); ?>
+            <?php if (is_active_sidebar('aside-sidebar')) : ?>
+                <?php dynamic_sidebar('aside-sidebar'); ?>
             <?php endif; ?>
         </div>
     </div>

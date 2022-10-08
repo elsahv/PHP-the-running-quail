@@ -5,15 +5,11 @@
   text-transform: capitalize;
 }
 
-#tags {
-  a {
-  }
-}
-
+ 
 
  
 .posts-grid {
-  padding: 20px 80px;
+  padding: 20px 60px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2em;

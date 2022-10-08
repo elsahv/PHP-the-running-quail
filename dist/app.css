@@ -10604,7 +10604,7 @@ textarea.form-control-lg {
 }
 
 .posts-grid {
-  padding: 20px 80px;
+  padding: 20px 60px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2em;
@@ -10652,30 +10652,43 @@ textarea.form-control-lg {
   grid-area: b;
 }
 
-.banner {
-  height: 400px;
-  width: 100%;
-  background: teal;
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "tl tr" "bl br";
+  grid-gap: 50px 0px;
+}
+@media only screen and (max-width: 600px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "tl" "tr" "br" "bl";
+  }
 }
 
-#about-images {
+.sq-1 {
+  grid-area: tl;
+}
+
+.sq-2 {
+  grid-area: tr;
+  padding-top: 65px;
+  line-height: 2rem;
+}
+
+.sq-3 {
+  grid-area: br;
+}
+
+.sq-4 {
+  grid-area: bl;
+  padding-top: 45px;
+  padding-right: 25px;
+  line-height: 2rem;
+}
+
+#about-img {
   border: solid 2px black;
-  margin: 10px 0;
-}
-
-.portfolioCTA {
-  text-align: center;
-  background: teal;
-  padding: 15px;
-  margin: 35px 0;
-  color: #fff;
-}
-.portfolioCTA a {
-  color: #fff;
-}
-.portfolioCTA li {
-  font-size: 18px;
-  list-style: none;
 }
 
 * {
@@ -10732,6 +10745,10 @@ footer {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+.single-post-title {
+  text-transform: capitalize;
 }
 
 .single-post-img {

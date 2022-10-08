@@ -2,21 +2,18 @@
 
 
 
-        <h2 class="text-dark text-center p-5"><?php the_title(); ?></h2>
-        <div class="container-fluid px-5 mb-5">
-            <section class="d-flex flex-wrap">
+        <h2 class="py-4 px-1"><?php the_title(); ?></h2>
 
+        
                 <?php if (has_post_thumbnail()) : ?>
-                    <img src=" <?php the_post_thumbnail_url('blog-large'); ?>" alt="<?php the_title(); ?>" class="img-fluid mb-3 img-thumbnail">
+                    <img src=" <?php the_post_thumbnail_url('blog-fullscreen'); ?>" alt="<?php the_title(); ?>" class="img-fluid">
                 <?php endif; ?>
 
 
-                <article class="p-5">
+                <article class="">
                     <?php the_content(); ?>
                 </article>
 
-            </section>
-        </div>
 
 <?php endwhile;
 else : endif; ?>
