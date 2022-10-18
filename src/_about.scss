@@ -6,9 +6,8 @@
   grid-template-areas:
   'tl tr'
    'bl br';
-   grid-gap: 50px 0px;
 
-   @media only screen and (max-width: 600px) {
+   @media only screen and (max-width: 834px) {
     grid-template-columns: 1fr;
     grid-template-areas:
     'tl'
@@ -23,15 +22,26 @@
  }
  .sq-2 {
   grid-area: tr;
-  padding-top: 65px;
-  line-height: 2rem;
-}
+  padding-top: 45px;
+  line-height: 1.75rem;
+
+  @media only screen and (max-width: 1024px) {
+    padding: 25px;
+  }
+  @media only screen and (max-width: 834px) {
+    padding: 30px 15px 0 0;
+  }
+  
+  @media only screen and (max-width: 531px) {
+    padding: 5px 5px 0;
+  }
+ }
 .sq-3 {
   grid-area: br;
-  // background: teal;
 }
 .sq-4 {
   grid-area: bl;
+
   padding-top: 45px;
   padding-right: 25px;
   line-height: 2rem;

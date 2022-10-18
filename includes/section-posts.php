@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container">
     <div class="posts-grid mb-3">
         <?php
         $the_query = new WP_Query(array(
@@ -33,7 +33,7 @@
                             <?php if (has_post_thumbnail()) : ?>
                                 <img src="<?php the_post_thumbnail_url('blog-small'); ?>" alt="<?php the_title(); ?>" class="img-fluid">
                             <?php endif; ?>
-                            
+
                             <h2 id="post-grid-title" class="py-2 px-1"><?php the_title(); ?></h2>
 
 
