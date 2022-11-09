@@ -16,7 +16,10 @@
       <div class="d-flex justify-content-between flex-wrap">
         <a class="navbar-brand" id="logo" href="/">
           <?php echo get_bloginfo('name'); ?>
+          <div class="construction">- site under construction, content coming soon!</div class="text-light px-5">
+
         </a>
+
 
         <?php
         wp_nav_menu(
